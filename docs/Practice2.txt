@@ -1,0 +1,57 @@
+Please use replit.com to create the following programs and save these on your local machines once you write the correct versions. Please feel free to take and give help to one another.
+
+1- Write a program to score the paper-rock-scissor game. Each of two users types in either P, R, or S. The program then announces the winner as well as the basis for determining the winner: Paper covers rock, Rock breaks scissors, Scissors cut paper, or Nobody wins. Be sure to allow the users to use lowercase as well as uppercase letters. Your program should include a loop that lets the user play again until the user says she or he is done.
+
+2- Write a program that finds and prints all of the prime numbers between 3 and 100. A prime number is a number such that 1 and itself are the only numbers that evenly divide it (for example, 3, 5, 7, 11, 13, 17, …).
+One way to solve this problem is to use a doubly nested loop. The outer loop can iterate from 3 to 100 while the inner loop checks to see if the counter value for the outer loop is prime. One way to see if number n is prime is to loop from 2 to n 21 and if any of these numbers evenly divides n, then n cannot be prime. If none of the values from 2 to n 21 evenly divides n, then n must be prime. (Note that there are several easy ways to make this algorithm more efficient.)
+
+3- A taxicab company calculates charges using a fixed $3.20 hire charge, a $2.05-per-kilometer charge for the distance covered, and an additional $0.95-per-minute charge based on the duration of the journey, in minutes. If the journey starts between 2300 and 0600 hours, a 15% surcharge is applied.
+Write a program that asks the user to input the duration of the journey (rounded up to the nearest minute), the distance traveled (in kilometers), and the journey start time (as a 24-hour single int value). The program should then output the fare that should be charged.
+
+4- Computer file sizes are measured in units of bytes, or higher units like kilobytes, megabytes, or gigabytes. Bytes, kilobytes, megabytes, and gigabytes are related by the following:
+a. One kilobyte is equal to 1024 bytes.
+b. One megabyte is equal to 1024 kilobytes.
+c. One gigabyte is equal to 1024 megabytes.
+Write a program that lets the user convert the size of a file from gigabytes,
+megabytes, or kilobytes to bytes. The program should prompt the user to enter the size of the file and the units the file size is being measured in, with G for gigabytes, M for Megabytes and K for Kilobytes. The program should then output the size of the file in each of the corresponding smaller file size types. For example, if the user enters the file size in megabytes, the program should output the file size in kilobytes and bytes.
+
+5- The length of the hypotenuse of a right-angled triangle is the square root
+of the sum of the squares of the other two sides. Write a function calcH that accept two doubles as function arguments and returns a double. Prompt the user for the length of base and the perpendicular side of the triangle. Use the pow and sqrt functions from cmath to perform the calculations.
+
+6- Modify your program from Practice Program 5 to add a function to calculate the perimeter of the triangle. Your function calcPerimeter should accept two arguments and return a double. Your calcPerimeter function should use your calcH function in working out the perimeter. Add the perimeter to the output of your program.
+
+7- The following problem is sometimes called “The Monty Hall Game Show Problem.” You are a contestant on a game show and have won a shot at the grand prize. Before you are three closed doors. Behind one door is a brand new car. Behind the other two doors are consolation prizes. The location of the prizes is randomly selected. The game show host asks you to select a door, and you pick one. However, before revealing the contents behind your door, the game show host reveals one of the other doors with a consolation prize. At this point, the game show host asks if you would like to stick with your original choice or switch your choice to the other closed door. What choice should you make to optimize your chances of winning the car? Does it matter whether you stick with your original choice or switch doors?
+Write a simulation program to solve the game show problem. Your program should make 10,000 simulated runs through the problem, randomly selecting locations for the prize, and then counting the number of times the car was won when sticking with the original choice, and counting the number of times the car was won when switching doors. Output the estimated probability of winning for both strategies. Be sure that your program exactly simulates the process of selecting the door, revealing one, and then switching. Do not make assumptions about the actual solution (for example, simply assuming that there is a 1/3 or 1/2 chance of getting the prize).
+
+8- In an exam, students are given a set of questions and 1 point is awarded for every correct answer and 0.25 points are deducted for every incorrect answer. Write a program that prompts the user for the number of questions that the student answered correctly and the number of incorrect answers. The program should use a function calcMarkAsPercentage to calculate the student’s final mark as a percentage. Carefully consider the order of operations required to calculate the correct score and if you need to cast any values.
+
+9- Modify your program from the Practice Program 8 to ask the user for the number of students whose marks are to be entered. Your program should then prompt the user for the marks of the required number of students. If a student gets a score lower than 0, their mark should be set to and output as 0. Your program should then print the highest, lowest, and average score of the students whose scores were calculated.
+
+10- Write an overloaded function max that takes either two or three parameters
+of type double and returns the largest of them.
+
+11- Write a function to check if one number is divisible by another. Your function should return a bool value which is true if a number is divisible by another, and false if there is a remainder left after the division.
+
+12- Write a program that reads in a length in feet and inches and outputs the equivalent length in meters and centimeters. Use at least three functions:
+one for input, one or more for calculating, and one for output. Include a loop that lets the user repeat this computation for new input values until the user says he or she wants to end the program. There are 0.3048 meters in a foot, 100 centimeters in a meter, and 12 inches in a foot.
+
+13- Write a program like that of the previous exercise that converts from meters
+and centimeters into feet and inches. Use functions for the subtasks.
+
+14- Write a program that reads in a weight in pounds and ounces and outputs the equivalent weight in kilograms and grams. Use at least three functions:
+one for input, one or more for calculating, and one for output. Include a loop that lets the user repeat this computation for new input values until the user says he or she wants to end the program. There are 2.2046 pounds in a kilogram, 1000 grams in a kilogram, and 16 ounces in a pound.
+
+15- Write a program like that of the previous exercise that converts from kilograms and grams into pounds and ounces. Use functions for the subtasks.
+
+16- Write a function that calculates a discount applicable on the price of an
+item. Your function should have three arguments: the price as a reference to a double, the discount as a double value, and a bool to indicate if the discount is calculated as a percentage or a fixed amount. You should calculate the discount and modify the price of the item accordingly.
+
+17- Modify your program for Programming Project 2 so that it checks that the discount is not negative, and that the price of the item does not drop to zero after applying the discount. If it does violate these conditions, then your program should use an assert to exit the program.
+
+18- Write a function called findMax which takes as input an array of doubles
+which are greater than zero and an integer which specifies how many elements there are in the array. The function should return the largest value in the array. Write a driver program to test your function with arrays of different lengths, different values, and finally, test your function on an uninitialized array.
+
+19- Write a function called sumAll which takes as input an array of integer values and an integer which specifies how many elements there are in the array. The function should return the sum of all the elements in the array. Write a driver program to test your function with arrays of different lengths, different values, and finally, test your function on an uninitialized array.
+
+20- Write a program that asks the user to input an integer named numDoubles.
+Create a dynamic array that can store numDoubles doubles and make a loop that allows the user to enter a double into each array entry. Loop through the array, calculate the average, and output it. Delete the memory allocated to your dynamic array before exiting.
